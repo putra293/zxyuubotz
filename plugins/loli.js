@@ -5,7 +5,7 @@ let res = await fetch(' https://raw.githubusercontent.com/Alfarqun/database/main
 if (!res.ok) throw await `${res.status} ${res.statusText}`;
 let json = await res.json();
 let url = json[Math.floor(Math.random() * json.length)]
-await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), '*©zifabotz*', watermark, 'selajutnya', '/loli', m)
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), '*©jarotbotz*', watermark, 'selajutnya', '/loli', m)
 }
 handler.command = /^(loli)$/i
 handler.limit = true
