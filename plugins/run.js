@@ -11,15 +11,15 @@ let handler = async(m, { conn }) => {
 📮 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ *_CARI SC SENDIRI_*
 _____••••••••• 
-⬣━〔Store By Rozi〕━⬣
+⬣━〔Store By Jarot〕━⬣
 ▌│█║▌║▌║║▌║▌║█│▌`.trim()
   const button = {
         buttonText: '↱ 🄺🄻🄸🄺 🅂🄸🄽🄸 ↲',
         description: kontol,
-        sections:  [{title: "STORE MURSID", rows: [
+        sections:  [{title: "STORE OSCAR", rows: [
         {title: 'Menu utama', description: "Kembali ke Menu Utama", rowId:".?"},
-        {title: 'nomor mursid', description: "kalau mau run silahkan cht mursid", rowId:".ownermursid"},
-        {title: 'RULES', description: "rules zifabotz", rowId:".rules"},
+        {title: 'nomor oscar', description: "kalau mau run silahkan cht oscar", rowId:".owneroscar"},
+        {title: 'RULES', description: "rules jarotbotz", rowId:".rules"},
        ] }],
         listType: 1
        }
@@ -27,6 +27,6 @@ _____•••••••••
 }
 
 handler.tags = ['main', 'update']
-handler.command = /^(run|runbotmursid)$/i
+handler.command = /^(run|runbotoscar)$/i
 handler.help = ['rules']
 module.exports = handler
