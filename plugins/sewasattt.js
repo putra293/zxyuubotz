@@ -10,7 +10,7 @@ let handler = async(m, { conn }) => {
 📮 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ *_Tolong jangan dispam_*
 _____••••••••• 
-⬣━〔Store By Rozi〕━⬣
+⬣━〔Store By Jarot〕━⬣
 ▌│█║▌║▌║║▌║▌║█│▌`.trim()
   const button = {
         buttonText: '↱ 🄺🄻🄸🄺 🅂🄸🄽🄸 ↲',
@@ -18,7 +18,7 @@ _____•••••••••
         sections:  [{title: "STORE SATBOTSSS", rows: [
         {title: 'Menu utama', description: "Kembali ke Menu Utama", rowId:".?"},
         {title: 'nomor owner satbotsss', description: "kalau mau sewa silahkan cht owner satbotsss", rowId:".ownersatbotsss"},
-        {title: 'RULES', description: "rules zifabotz", rowId:".rules"},
+        {title: 'RULES', description: "rules jarotbotz", rowId:".rules"},
        ] }],
         listType: 1
        }
