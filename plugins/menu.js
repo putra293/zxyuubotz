@@ -17,15 +17,15 @@ const defaultMenu = {
 ║│➸[%xp4levelup]
 ║│➸%totalexp XP secara Total
 ║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TANGGAL⳹ ❋ཻུ۪۪〕 ❉──────
-║│➸Hari: *%week %weton*
-║│➸Tanggal: *%date*
-║│➸WaktuIslam:*%dateIslamic*
-║│➸Waktu: *%time*
+║│➸Hari🍁: *%week %weton*
+║│➸Tanggal🍁: *%date*
+║│➸WaktuIslam🍁:*%dateIslamic*
+║│➸Waktu🍁: *%time*
 ║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TIME⳹ ❋ཻུ۪۪〕 ❉──────
-║│➸Uptime: *%uptime (%muptime)*
-║│➸Database: %rtotalreg dari %totalreg
-║│➸Memory Used : 
-║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+║│➸Uptime🍁: *%uptime (%muptime)*
+║│➸Database🍁: %rtotalreg dari %totalreg
+║│➸Memory Used🍁 : 
+║│➸$🍁{(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ╰─────────❉
 %readmore`.trimStart(),
   header: '*║╭──❉ 〔%category〕*',
