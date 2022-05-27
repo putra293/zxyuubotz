@@ -14,7 +14,7 @@ let handler = async(m, { conn }) => {
         {title: 'Menu utama', description: "Kembali ke Menu Utama", rowId:".?"},
         {title: 'harga 1', description: "jasarun tanpa di edit", rowId:".jasarun1"},
         {title: 'harga 2', description: "jasarun di edit", rowId:".jasarrun2"},
-        {title: 'Nomor mursid', description: "nomor mursid", rowId:".ownermursid"},
+        {title: 'Nomor oscar', description: "nomor mursid", rowId:".owneroscar"},
        ] }],
         listType: 1
        }
