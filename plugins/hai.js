@@ -1,10 +1,10 @@
 let handler = async (m, { conn }) => {
-let caption = `*📮: HALLO KAK SAYA ZIFABOTZ,SILAHKAN KLIK BUTTON DI BAWAH UNTUK MENGETAHUI FITUR BOT*`
+let caption = `*📮: HALLO KAK SAYA JAROTBOTZ,SILAHKAN KLIK BUTTON DI BAWAH UNTUK MENGETAHUI FITUR BOT*`
 
-conn.sendButton( m.chat, caption, `©️ zifabotz`, `Menu`, `.menu`, m)
+conn.sendButton( m.chat, caption, `©️ jarotbotz`, `Menu`, `.menu`, m)
 
        }
        
-handler.customPrefix = /^(hallo|hay|zif|zifa|zifabot|zifabotz|hai|hay|menu)/i
+handler.customPrefix = /^(hallo|hay|rot|jarot|bot|haibotz|hai|hay|menu)/i
 handler.command = new RegExp
 module.exports = handler
