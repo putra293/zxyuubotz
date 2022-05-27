@@ -228,10 +228,10 @@ let uptime = clockString(_uptime)
 ║╭──❉ 〔 ⳹ ❋ཻུ۪۪𝐁𝐎𝐓 𝐉𝐀𝐑𝐎𝐓⳹ ❋ཻུ۪۪ 〕 ❉────── 
 ║│➸⏰Aktif selama ${uptime}
 ║│➸⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸ Nama bot: *𝐁𝐎𝐓𝐓 𝐉𝐑*
-║│➸ *${conn.blocklist.length}* Terblock
-║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+║│➸🍁 Nama bot: *𝐁𝐎𝐓𝐓 𝐉𝐑*
+║│➸🍁 *${conn.blocklist.length}* Terblock
+║│➸🍁 *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+║│➸🍁 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ╰─────────❉
 _____••••••••• 
 ⬣━〔Powered By 𝐉𝐀𝐑𝐎𝐓〕━⬣
