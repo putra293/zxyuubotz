@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'zifabotz tidak aktif' : banned ? 'kamu dibanned' : '*APAAN NGETAG",ADA BANSOS KAH🗿?*',
-                '©zifabotz',
+                isBanned ? 'jarotbotz tidak aktif' : banned ? 'kamu dibanned' : '*APAAN NGETAG",ADA BANSOS KAH🗿?*',
+                '©jarotbotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -37,11 +37,11 @@ handler.all = async function (m, { isBlocked }) {
 𝐌𝐚𝐮 𝐬𝐞𝐰𝐚? 𝐘𝐚 𝐥𝐚𝐧𝐠𝐬𝐮𝐧𝐠 𝐤𝐞 𝐨𝐰𝐧𝐞𝐫 𝐚𝐣𝐚 𝐧𝐠𝐚𝐩𝐢𝐧 𝐤𝐞 𝐛𝐨𝐭❗️
 ╭═══════════════════════
 ║╭──❉ 〔 𝐕𝐈𝐀 𝐌𝐎𝐁𝐈𝐋𝐄 〕 ❉──────
-║│➸ *DANA* : 085828764046
-║│➸ *GOPAY*: 085828764046
+║│➸ *DANA* : 085850539404
+║│➸ *PULSA*: 085850539404
 ║╰─────────
 ▌│█║▌║▌║║▌║▌║█│▌▌│█║▌║▌║║▌║▌║█│
-╰═══════════════════════`.trim(), '©zifabotz', 'PAYMENT', '.payment', 'MENU', '.menu', m)
+╰═══════════════════════`.trim(), '©jarotbotz', 'PAYMENT', '.payment', 'MENU', '.menu', m)
 }
 
     // salam
