@@ -10,34 +10,34 @@ let str = `♡   ❍ㅤ  ⎙ㅤ ⌲
 
 ╭══════════════════๑—————————
 *║╭──❉ 〔Utama〕*
-║│➸.onketik
-║│➸.sewazifa
-║│➸.biodata
-║│➸.groupbot
-║│➸.iklan
-║│➸.linktermux
-║│➸.lucbot
-║│➸.menu
-║│➸.help
-║│➸.?
-║│➸.tutorbot
-║│➸.panduan
-║│➸.runbotmursid
-║│➸.sewa
-║│➸.sewasat
-║│➸.sewaJarot1
-║│➸.menu
-║│➸.help
-║│➸.?
-║│➸.tambah <judul>|<nomor>|<desc>
-║│➸.Thanksto
-║│➸.tqto
-║│➸.heroku3
-║│➸.tutorial
-║│➸.replit2
+║│➸❀.onketik
+║│➸❀.sewazifa
+║│➸❀.biodata
+║│➸❀.groupbot
+║│➸❀.iklan
+║│➸❀.linktermux
+║│➸❀.lucbot
+║│➸❀.menu
+║│➸❀.help
+║│➸❀.?
+║│➸❀.tutorbot
+║│➸❀.panduan
+║│➸❀.runbotmursid
+║│➸❀.sewa
+║│➸❀.sewasat
+║│➸❀.sewaJarot1
+║│➸❀.menu
+║│➸❀.help
+║│➸❀.?
+║│➸❀.tambah <judul>|<nomor>|<desc>
+║│➸❀.Thanksto
+║│➸❀.tqto
+║│➸❀.heroku3
+║│➸❀.tutorial
+║│➸❀.replit2
 *╰───❉*
 
-*║╭──❉ 〔Game〕*
+*║╭──❉ 〔Game〕*༄
 ║│➸.asahotak
 ║│➸.bansos  (Premium)
 ║│➸.caklontong
