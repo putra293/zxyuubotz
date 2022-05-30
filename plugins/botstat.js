@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
 
     let str = `
 ╭╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪STATUS JAROTBOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║╭──❉ 〔 BOT STATUS 〕 ❉────── 
 ║│➸ Aktif selama ${uptime}
 ║│➸ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ║│➸ *${groups.length}* Grup
@@ -24,19 +24,19 @@ let handler = async (m, { conn }) => {
 _____•••••••••
 
 ╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪PERATURAN JAROTBOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
-║│➸ ${anon ? '🙋' : '🙅'} *Anon Chat*
-║│➸ ${anticall ? '🙋' : '🙅'} *Anti Call*
-║│➸ ${antispam ? '🙋' : '🙅'} *Anti Spam*
-║│➸ ${antitroli ? '🙋' : '🙅'} *Anti Troli*
-║│➸ ${backup ? '🙋' : '🙅'} *Auto Backup DB*
-║│➸ ${groupOnly ? '🙋' : '🙅'} *Mode Grup*
-║│➸ ${jadibot ? '🙋' : '🙅'} *Jadi Bot*
-║│➸ ${nsfw ? '🙋' : '🙅'} *Mode Nsfw*
+║╭──❉ 〔 PERATURAN ZXYUUBOTZ 〕 ❉────── 
+║│➸ ${anon ? '✅' : '❌'} *Anon Chat*
+║│➸ ${anticall ? '✅' : '❌'} *Anti Call*
+║│➸ ${antispam ? '✅' : '❌'} *Anti Spam*
+║│➸ ${antitroli ? '✅' : '❌'} *Anti Troli*
+║│➸ ${backup ? '✅' : '❌'} *Auto Backup DB*
+║│➸ ${groupOnly ? '✅' : '❌'} *Mode Grup*
+║│➸ ${jadibot ? '✅' : '❌'} *Jadi Bot*
+║│➸ ${nsfw ? '✅' : '❌'} *Mode Nsfw*
 ╰─────────❉
 _____•••••••
     `.trim()
-conn.send2Button(m.chat, str, wm, '⋮☰ Menu', '.menu', '✆Owner✆', '.owner',m)
+conn.send2Button(m.chat, str, wm, 'Info', '.info', 'Owner', '.owner',m)
 conn.reply(str)
 }
 handler.help = ['botstatus']
