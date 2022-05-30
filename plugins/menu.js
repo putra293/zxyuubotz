@@ -8,31 +8,30 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭═══════════════════════⬣
-║╭──❉ 〔 *ZxyuuBotz* 〕 ❉──────
+║╭─────⟢ 〔 *Zxyuu Botz* 〕 ⟣──────
 ║│➸Hai, %name!
 ║│➸Tersisa *%limit Limit*
 ║│➸Role *%role*
 ║│➸Level *%level (%exp / %maxexp)*
 ║│➸[%xp4levelup]
 ║│➸%totalexp XP secara Total
-║╭──❉ 〔 *TANGGAL* 〕 ❉──────
+║╭──⟢〔 *TANGGAL* 〕 ⟣──────
 ║│➸Hari: *%week %weton*
 ║│➸Tanggal: *%date*
 ║│➸WaktuIslam:*%dateIslamic*
 ║│➸Waktu: *%time*
-║╭──❉ 〔 *TIME* 〕 ❉──────
+║╭──⟢ 〔 *TIME* 〕 ⟣──────
 ║│➸Uptime: *%uptime (%muptime)*
 ║│➸Database: %rtotalreg dari %totalreg
 ║│➸Memory Used : 
 ║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-╰─────────❉
+╰─────────⟢
 %readmore`.trimStart(),
-  header: '║╭──❉ 〔%category〕',
-  body: '  ║│➸%cmd %islimit %isPremium',
-  footer: '╰───❉\n',
+  header: '┏━━ꕥ〔 %category 〕ꕥ━⬣ ',
+  body: '  ┃ ✾%cmd %islimit %isPremium',
+  footer: '┗━ꕥ\n',
   after: `
-  _*Bot By Romli*_
+ _*Botz By Romli*_
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -44,36 +43,36 @@ let uptime = clockString(_uptime)
   let arrayMenu = ['all', 'game', 'edukasi', 'news', 'nsfw', 'xp', 'stiker', 'image', 'cristian', 'anime', 'kerangajaib', 'quotes', 'admin', 'rpg', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'vote', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
-    'main': 'Utama',
-    'game': 'Game',
-    'xp': 'Exp & Limit',
+    'main': '*Utama*',
+    'game': '*Game*',
+    'xp': '*Exp & Limit*',
     'nsfw': `NSFW ${global.opts['nsfw'] ? '' : '(Dinonaktifkan)'}`,
-    'sticker': 'Stiker',
-    'edukasi': 'Edukasi',
-    'news': 'News',
-    'kerang': 'Kerang Ajaib',
-    'quotes': 'Quotes',
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
-    'rpg': 'Epic Rpg',
-    'group': 'Grup',
-    'anime': 'Anime',
-    'premium': 'Premium',
-    'internet': 'Internet',
-    'image': 'Random Image',
-    'anonymous': 'Anonymous Chat',
-    'nulis': 'MagerNulis & Logo',
-    'downloader': 'Downloader',
-    'tools': 'Tools',
-    'cristian': 'cristian',
-    'fun': 'Fun',
-    'database': 'Database',
-    'vote': 'Voting',
-    'absen': 'Absen',
-    'quran': 'Islam',
-    'audio': 'Pengubah Suara',
-    'jadibot': 'Jadi Bot',
-    'info': 'Info',
-    '': 'Tanpa Kategori',
+    'sticker': '*Stiker*',
+    'edukasi': '*Edukasi*',
+    'news': '*News*',
+    'kerang': '*Kerang Ajaib*',
+    'quotes': '*Quotes*',
+    'admin': `Admin ${global.opts['admin'] ? '' : '(Dinonaktifkan)'}`,
+    'rpg': '*Epic Rpg*',
+    'group': '*Grup*',
+    'anime': '*Anime*',
+    'premium': '*Premium*',
+    'internet': '*Internet*',
+    'image': '*Random Image*',
+    'anonymous': '*Anonymous Chat*',
+    'nulis': '*MagerNulis & Logo*',
+    'downloader': '*Downloader*',
+    'tools': '*Tools*',
+    'cristian': '*cristian*',
+    'fun': '*Fun*',
+    'database': '*Database*',
+    'vote': '*Voting*',
+    'absen': '*Absen*',
+    'quran': '*Islam*',
+    'audio': '*Pengubah Suara*',
+    'jadibot': '*Jadi Bot*',
+    'info': '*Info*',
+    '': '*Tanpa Kategori*',
   }
   if (teks == 'game') tags = {
     'game': 'Game'
@@ -107,7 +106,7 @@ let uptime = clockString(_uptime)
     'cristian': 'Cristian'
   }
   if (teks == 'admin') tags = {
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
+    'admin': 'Admin'
   }
   if (teks == 'grup') tags = {
     'group': 'Grup'
@@ -225,17 +224,17 @@ let uptime = clockString(_uptime)
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
                         "description": `╭═══════════════════════
-║╭──❉ 〔 *ZyuuBotz* 〕 ❉────── 
+║╭───⟢ 〔 *Zxyuu Botz*〕 ⟣────── 
 ║│⏰: Aktif selama ${uptime}
 ║│⚡: Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│*Nama bot*: *ZxyuuBotz*
-║│❁ *${conn.blocklist.length}* Terblock
-║│❁ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-║│❁ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-╰─────────❉
+║│🤖: *Nama bot* : *ZxyuuBotz*
+║│⛔: *${conn.blocklist.length}* *_Terblock_*
+║│🚫: *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* *_Chat Terbanned_*
+║│❗: *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* *_Pengguna Terbanned_*
+╰─────────⟢
 _*Bot By Romli*_`.trim(),
-                        "footerText": "*ZxyuuRomz-XzyuuNaii",
-                        "buttonText": "TAMPILAN MENU",
+                        "footerText": "ZxyuuRomz--XzyuuNaii",
+                        "buttonText": "KLIK DISINI",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -257,11 +256,11 @@ _*Bot By Romli*_`.trim(),
                                     "rowId": ".iklan"
                                 }, {
   "title":  "|👩‍💻| ❯╾jadibot╼-",
-                                    "description": "bergabung bersama bot Romzz",
+                                    "description": "bergabung bersama bot ROMZZ",
                                     "rowId": ".jadibot"
                                 }, {
   "title":  "|🙇‍♂️| ❯╾group╼-",
-                                    "description": "bergabung di grub Gabut🗿",
+                                    "description": "bergabung di grub bersama bot",
                                     "rowId": ".gcbot"
                                 }, {
   "title":  "|📒| ❯╾biodata owner╼-",
@@ -279,150 +278,150 @@ _*Bot By Romli*_`.trim(),
                                     "description": "Memberikan Semua Fitur Bot",
                                     "rowId": ".? all",
                                 }, { 
-                                    "title": "|🕋|--MENU ISLAM「 0 」",
+                                    "title": "|🕋|--Menu Islam 「 0 」",
                                     "description": "Menu Tentang Islam",
                                     "rowId": ".? quran"
                                 }, {
- "title": "|📖|--MENU DOA HARIAN「 1 」",
+ "title": "|📖|--Menu Doa Harian「 1 」",
                                     "description": "Menu doaharian",
                                     "rowId": ".doaharian"
                                 }, {
-                                	"title": "|⛪|--MENU KRISTEN「 2 」",
+                                	"title": "|⛪|--Menu Kristen「 2 」",
                                     "description": "Menu Tentang Kristen",
                                     "rowId": ".? cristian"
                                 }, {
-                                    "title": "|🏫|--MENU EDUKASI「 3 」",
-                                    "description": "Menu Edukasi",
+                                    "title": "|🏫|--Menu Edukasi「 3 」",
+                                    "description": "Menu Edukasi Di ZxyuuBotz",
                                     "rowId": ".? edukasi"
                                 }, { 
-                                    "title": "|📰|--MENU BERITA「 4 」",
-                                    "description": "Menu Berita",
+                                    "title": "|📰|--Menu Berita「 4 」",
+                                    "description": "Menu Berita Di ZxyuuBotz",
                                     "rowId": ".? News"
                                 }, { 
-                                    "title": "|🎮|--MENU GAME「 5 」",
-                                    "description": "Menu Game",
+                                    "title": "|🎮|--Menu Game「 5 」",
+                                    "description": "Menu Game Di ZxyuuBotz",
                                     "rowId": ".? game"
                                 }, { 
-                                    "title": "|🗺️|--MENU RPG「 6 」",
-                                    "description": "Menu Game RPG",
+                                    "title": "|🗺️|--Menu RPG「 6 」",
+                                    "description": "Menu RPG Di ZxyuuBotz",
                                     "rowId": ".? rpg"
                                 }, { 
-                                    "title": "|📈|--MENU XP & LEVEL「 7 」",
-                                    "description": "XP Dan Level",
+                                    "title": "|📈|--XP Dan Level「 7 」",
+                                    "description": "XP Dan Level Lu",
                                     "rowId": ".? xp"
                                 }, { 
-                                    "title": "|🔞|--MENU HARAM「 8 」",
+                                    "title": "|🔞|--Menu 18+「 8 」",
                                     "description": "Astarfirullah,Tobat Banh",
                                     "rowId": ".? nsfw"
                                 }, { 
-                                    "title": "|🖼️|--MENU FOTO RANDOM「 9 」",
-                                    "description": "Menu Foto Random",
+                                    "title": "|🖼️|--Menu Foto Random「 9 」",
+                                    "description": "Menu Foto Di ZxyuuBotz",
                                     "rowId": ".? image"
                                 }, { 
-                                    "title": "|🎇|-MENU STICKER「 10 」",
-                                    "description": "Menu Buat Stiker",
+                                    "title": "|🎇|--Menu Sticker「 10 」",
+                                    "description": "Buat Sticker Lu Di ZxyuuBotz",
                                     "rowId": ".? stiker"
                                 }, { 
-                                    "title": "|🐚|--MENU KERANG AJAIB「 11 」",
-                                    "description": "Menurut Kerang ajaib....",
+                                    "title": "|🐚|--Kerang Ajaib「 11 」",
+                                    "description": "Menurut Kerang Ajaib..",
                                     "rowId": ".? kerangajaib"
                                 }, { 
-                                    "title": "|📑|--MENU QUOTES「 12 」",
-                                    "description": "Menu Quotes",
+                                    "title": "|📑|--Menu Qoutes「 12 」",
+                                    "description": "Liat Ajh su",
                                     "rowId": ".? quotes"
                                 }, { 
-                                    "title": "|🏛️|--MENU ATMIN「 13 」",
-                                    "description": "Menu Admin Group",
+                                    "title": "|🏛️|--Menu Khusus Admin「 13 」",
+                                    "description": "Menu Buat Atmin 🗿",
                                     "rowId": ".? admin"
                                 }, { 
-                                    "title": "|🏢|--MENU GROUP「 14 」",
-                                    "description": "Menu Group",
+                                    "title": "|🏢|--Menu Khusus Group「 14 」",
+                                    "description": "Menu Group Di ZxyuuBotz",
                                     "rowId": ".? grup"
                                 }, { 
-                                    "title": "|🔝|--MENU PREMIUM「 15 」",
-                                    "description": "Menu Untuk Premium",
+                                    "title": "|🔝|--Menu Khusus Premium「 15 」",
+                                    "description": "Beli Premium Biar bisa Pake",
                                     "rowId": ".? premium"
                                 }, { 
-                                    "title": "|🖥️|--MENU INTERNET「 16 」",
-                                    "description": "Cari Sesuatu Di Bot",
+                                    "title": "|🖥️|--Menu Internet「 16 」",
+                                    "description": "Cari Sesuatu Di ZxyuuBotz",
                                     "rowId": ".? internet"
                                 }, { 
-                                    "title": "|🥷|--MENU ANONYMOUS「 17 」",
+                                    "title": "|🥷|--Menu Anonymous「 17 」",
                                     "description": "Mainkan Anonymous Chat",
                                     "rowId": ".? anonymous"
                                 }, { 
-                                    "title": "|✒️|--MENU NULIS & LOGO「 18 」",
-                                    "description": "Buat lu yg mager nulis",
+                                    "title": "|✒️|--Menu Nulis & Logo「 18 」",
+                                    "description": "Buat Lu Yang Mager Nulis🗿",
                                     "rowId": ".? nulis"
                                 }, { 
-                                    "title": "|📺|--MENU DOWNLOAD「 19 」",
-                                    "description": "Download Sesuatu Di Bot",
+                                    "title": "|📺|--Menu Download「 19 」",
+                                    "description": "Download Sesuatu Di ZxyuuBotz",
                                     "rowId": ".? downloader"
                                 }, { 
-                                    "title": "|🔧|--MENU TOOLS「 20 」",
-                                    "description": "Tools Yang Bisa di Gunakan Di Bot",
+                                    "title": "|🔧|--Menu Tools「 20 」",
+                                    "description": "Tools Yang Bisa di Gunakan Di ZxyuuBotz",
                                     "rowId": ".? tools"
                                 }, { 
-                                    "title": "|🎇|--MENU FUN「 21 」",
-                                    "description": "Menu Ceria",
+                                    "title": "|🎇|--Menu Ceriaa「 21 」",
+                                    "description": "Menu Ceria🗿",
                                     "rowId": ".? fun"
                                 }, { 
-                                    "title": "|📂|--MENU SIMPAN「 22 」",
+                                    "title": "|📂|--Menu Simpan「 22 」",
                                     "description": "Simpan Sesuatu Di Bot",
                                     "rowId": ".? database"
                                 }, { 
-                                    "title": "|📝|--MENU VOTE & ABSEN「 23 」",
-                                    "description": "Menu Vote & Absen",
+                                    "title": "|📝|--Menu Vote & Absen「 23 」",
+                                    "description": "Menu Vote & Absen Di ZxyuuBotz",
                                     "rowId": ".? vote"
                                 }, { 
-                                    "title": "|🎙️|--MENU UBAH SUARA「 24 」",
-                                    "description": "Ubah Suaramu",
+                                    "title": "|🎙️|--Menu Ubah Suara「 24 」",
+                                    "description": "Ubah Suaramu Si ZxyuuBotz",
                                     "rowId": ".? audio"
                                 }, { 
-                                    "title": "|🤖|--NUMPANG JADIBOT「 25 」",
-                                    "description": "menu khusus Jadi Bot",
+                                    "title": "|🤖|--Menu Jadibot「 25 」",
+                                    "description": "Numpang Botz",
                                     "rowId": ".? jadibot"
                                 }, { 
-                                    "title": "|⛩️|--MENU WIBU「 26 」",
-                                    "description": "Cari Anime Di Bot",
+                                    "title": "|⛩️|--Menu Wibu「 26 」",
+                                    "description": "Cari Anime Di ZxyuuBotz",
                                     "rowId": ".? anime"
                                 }, { 
-                                    "title": "|ℹ️|--TENTANG「 27 」",
+                                    "title": "|ℹ️|--Info ZxyuuBotz「 27 」",
                                     "description": "Info Tentang Bot",
                                     "rowId": ".? info"
                                 }, { 
-"title": "|⏳|--RUNTIME BOTZ「 28 」",
-                                    "description": "runtime bot",
+"title": "|⏳|--Runtime Botz「 28 」",
+                                    "description": "Runtime Botz",
                                     "rowId": ".runtime"
                                 }, { 
-                                    "title": "|📬|--MENU TAG DIRI「 29 」",
+                                    "title": "|📬|--Menu Tag「 29 」",
                                     "description": "tag diri sendiri",
                                     "rowId": ".tagme"
                                 }, { 
-"title": "|🎎|--MENU GAMBAR「 30 」",
+"title": "|🎎|--Menu Gambar「 30 」",
                                     "description": "gambar waifu",
                                     "rowId": ".waifu"
                                 }, { 
-"title": "|🅿️|--MENU PROFILE「 31 」",
+"title": "|🅿️|--Menu Profile「 31 」",
                                     "description": "profile anda di ZxyuuBotz",
                                     "rowId": ".profile"
                                 }, { 
-                                    "title": "|👩‍⚖️|--MENU OWNER「 32 」",
-                                    "description": "Menu Khusus Owner!!",
+                                    "title": "|👩‍⚖️|--Menu Khusus Owner「 32 」",
+                                    "description": "Menu Khusus Romli/Naii Doang🗿",
                                     "rowId": ".? owner"
                                 }],
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| Owner ZxyuuBotx",
-                                    "description": "pemilik ZxyuuBotz",
+                                    "title": "|👩‍💻| Owner ZxyuuBotz",
+                                    "description": "pemilik ZxyuuRomz",
                                     "rowId": ".owner"
                                 }, {
-                                    "title": "|🛠|Status bot",
+                                    "title": "|🛠|--Status bot",
                                     "description": "Status dan informasi bot",
                                     "rowId": ".botstatus"
                                 }, {
-                                    "title": "|🖨️| Rules ZxyuuBotz",
+                                    "title": "|🖨️|--Rules ZxyuuBotz",
                                     "description": "Mari menaati peraturan demi Kita bersama",
                                     "rowId": ".rules"
                                 }, {
@@ -519,7 +518,7 @@ _*Bot By Romli*_`.trim(),
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonImg(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, 'OWNER👤', `${_p}owner`, 'TUTORIAL🤖', `.carabuatbot`, m)
+    await conn.send2ButtonImg(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, 'OWNER BOTZ👤', `${_p}owner`, 'CARA BUAT BOT🤖', `.carabuatbot`, m)
 
  } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
