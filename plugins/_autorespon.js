@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'jarotbotz tidak aktif' : banned ? 'kamu dibanned' : '*APAAN NGETAG",ADA BANSOS KAH🗿?*',
-                '©jarotbotz',
+                isBanned ? 'zxyuubotz tidak aktif' : banned ? 'kamu dibanned' : '*MAU APA TAG GUA NGAB???*',
+                '©zxyuubotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -29,19 +29,19 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `
-╭═══ 〔 𝐋𝐈𝐒𝐓 𝐁𝐄𝐑𝐋𝐀𝐍𝐆𝐆𝐀𝐍𝐀𝐍 〕 ════
+╭═══ 〔 *SEWA KONTOL* 〕 ════
 ├⬡ 𝟏 ᗷᑌᒪᗩᑎ  *15.000*
 ├⬡ 4 ᗷᑌᒪᗩᑎ  *30.000*
 ├⬡ 8 BULAN   *40.000*
 └═══════════════
-𝐌𝐚𝐮 𝐬𝐞𝐰𝐚? 𝐘𝐚 𝐥𝐚𝐧𝐠𝐬𝐮𝐧𝐠 𝐤𝐞 𝐨𝐰𝐧𝐞𝐫 𝐚𝐣𝐚 𝐧𝐠𝐚𝐩𝐢𝐧 𝐤𝐞 𝐛𝐨𝐭❗️
+_JNGN MAU GRATIS NYA DOANG!!!_
 ╭═══════════════════════
-║╭──❉ 〔 𝐕𝐈𝐀 𝐌𝐎𝐁𝐈𝐋𝐄 〕 ❉──────
-║│➸ *DANA* : 085850539404
-║│➸ *PULSA*: 085850539404
+║╭──❉ 〔 PAYMENT 〕 ❉──────
+║│➸ *PULSA* : _081224804625_
+║│➸ *PULSA*:  _6281215710461_
 ║╰─────────
 ▌│█║▌║▌║║▌║▌║█│▌▌│█║▌║▌║║▌║▌║█│
-╰═══════════════════════`.trim(), '©jarotbotz', 'PAYMENT', '.payment', 'MENU', '.menu', m)
+╰═══════════════════════`.trim(), '©ZxyuuBotz', 'PAYMENT', '.payment', 'MENU', '.menu', m)
 }
 
     // salam
