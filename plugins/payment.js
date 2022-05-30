@@ -1,12 +1,10 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
   let ext= `
-╭═══ *〘 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 〙*
+╭═══ 〘 *PAYMENT* 〙
 ║ ┅ ๑————————————๑
-║┊ ⌲ *DANA* :
-_085828764046_
-║┊ ⌲ *GOPAY* :
-_085828764046_
+║┊ ⌲ *PULSA* : _081224804625_
+║┊ ⌲ *PULSA* : _081215710461_
 ╰═ ┅ ═══════
 ▌│█║▌║▌║║▌║▌║█│▌
 `.trim()
