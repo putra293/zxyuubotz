@@ -228,7 +228,7 @@ let uptime = clockString(_uptime)
 ║╭──❉ 〔 *ZyuuBotz* 〕 ❉────── 
 ║│⏰: Aktif selama ${uptime}
 ║│⚡: Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│Nama bot: *𝐁𝐎𝐓𝐓 𝐉𝐑*
+║│*Nama bot*: *ZxyuuBotz*
 ║│❁ *${conn.blocklist.length}* Terblock
 ║│❁ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ║│❁ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
@@ -519,7 +519,7 @@ _*Bot By Romli*_`.trim(),
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonImg(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, '▁ ▂ ▄ ▅ ▆ ▇ █𝒫𝐸𝑀𝐼𝐿𝐼𝒦 𝐵❁𝒯', `${_p}owner`, '🐻𝐓𝐔𝐓𝐎𝐑𝐈𝐀𝐋 𝐌𝐄𝐌𝐁𝐔𝐀𝐓 𝐁𝐎𝐓🐻', `.carabuatbot`, m)
+    await conn.send2ButtonImg(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, 'OWNER👤', `${_p}owner`, 'TUTORIAL🤖', `.carabuatbot`, m)
 
  } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
