@@ -4,40 +4,40 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
 
 let str = `♡   ❍ㅤ  ⎙ㅤ ⌲
-╭─[ *_BotJr_* ]─✧
+╭─[ *ZXYUU* ]─✧
 ╰─────···
-📮 𝚂𝚒𝚕𝚊𝚑𝚔𝚊𝚗 𝚙𝚒𝚕𝚒𝚑 𝚖𝚎𝚗𝚞 𝚍𝚒 𝚋𝚊𝚠𝚊𝚑 𝚒𝚗𝚒_____•••••••••
+📮 Kasih Jeda Biar Ga Delay..
 
 ╭══════════════════๑—————————
 *║╭──❉ 〔Utama〕*
-║│➸❀.onketik
-║│➸❀.sewazifa
-║│➸❀.biodata
-║│➸❀.groupbot
-║│➸❀.iklan
-║│➸❀.linktermux
-║│➸❀.lucbot
-║│➸❀.menu
-║│➸❀.help
-║│➸❀.?
-║│➸❀.tutorbot
-║│➸❀.panduan
-║│➸❀.runbotmursid
-║│➸❀.sewa
-║│➸❀.sewasat
-║│➸❀.sewaJarot1
-║│➸❀.menu
-║│➸❀.help
-║│➸❀.?
-║│➸❀.tambah <judul>|<nomor>|<desc>
-║│➸❀.Thanksto
-║│➸❀.tqto
-║│➸❀.heroku3
-║│➸❀.tutorial
-║│➸❀.replit2
+║│➸.onketik
+║│➸.sewazifa
+║│➸.biodata
+║│➸.groupbot
+║│➸.iklan
+║│➸.linktermux
+║│➸.lucbot
+║│➸.menu
+║│➸.help
+║│➸.?
+║│➸.tutorbot
+║│➸.panduan
+║│➸.runbotmursid
+║│➸.sewa
+║│➸.sewasat
+║│➸.sewaJarot1
+║│➸.menu
+║│➸.help
+║│➸.?
+║│➸.tambah <judul>|<nomor>|<desc>
+║│➸.Thanksto
+║│➸.tqto
+║│➸.heroku3
+║│➸.tutorial
+║│➸.replit2
 *╰───❉*
 
-*║╭──❉ 〔Game〕*༄
+*║╭──❉ 〔Game〕*
 ║│➸.asahotak
 ║│➸.bansos  (Premium)
 ║│➸.caklontong
@@ -544,27 +544,27 @@ let str = `♡   ❍ㅤ  ⎙ㅤ ⌲
 *╰───❉*
 
 
-  ⬣━〔Powered By Jarot〕━⬣
-© BotJr`
+  Powered Romli〕━⬣
+© ZxyuuBotz`
 let name = await conn.getName(m.sender)
 
 let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 
-  sumberImg = await (await fetch(fla + 'BotJr')).buffer()
+  sumberImg = await (await fetch(fla + 'ZxyuuBotz')).buffer()
   image = (await conn.prepareMessage('6285826114932@s.whatsapp.net', sumberImg, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
   res = await conn.prepareMessageFromContent(m.chat, {
     "productMessage": {
       "product": {
         "productImage": image,
         "productId": "4938174216214248",
-        "title": "𝚃𝙰𝙼𝙿𝙸𝙻𝙰𝙽 𝙼𝙴𝙽𝚄 BotJr",
+        "title": "ZxyuuBotz",
         "description": '\n' + wm + '\n' + str,
-        "retailerId": "Thanks For BotJr !",
+        "retailerId": "Thanks For Romli !",
         "url": "▌│█║▌║▌║║▌║▌║█│▌",
         "descriptionCount": "999999999",
         "productImageCount": "1",
       },
-      "businessOwnerJid": "6285850539404@s.whatsapp.net",
+      "businessOwnerJid": "6281224804625@s.whatsapp.net",
       "contextInfo": {
         "forwardingScore": 9999,
         "isForwarded": true
