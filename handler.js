@@ -404,12 +404,12 @@ module.exports = {
           if (chat.welcome) {
             let groupMetadata = await this.groupMetadata(jid)
             for (let user of participants) {
-              let kai = await(await fetch('https://telegra.ph/file/16fd3099fec2f93201556.jpg')).buffer()
-              let poi = await(await fetch('https://telegra.ph/file/16fd3099fec2f93201556.jpg')).buffer()
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'ようこそ Youkuso, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                  (chat.sBye || this.bye || conn.bye || '左様なら Sayounara, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-                let wel = `━━━━━━ Welcome Beban ━━━━━━`
-                let lea = `━━━━━━ Good Bye Beban ━━━━━━`
+              let kai = await(await fetch('https://telegra.ph/file/fd581c8c61541d90f2eac.jpg')).buffer()
+              let poi = await(await fetch('https://telegra.ph/file/f5ba2a64fc69d9a5bfbb7.jpg')).buffer()
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome Tod!, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
+                  (chat.sBye || this.bye || conn.bye || 'Dadahh Ngntd!, @user!')).replace(/@user/g, '@' + user.split`@`[0])
+                let wel = `━━━━━━ Welcome Tod ━━━━━━`
+                let lea = `━━━━━━ Good Bye Tod ━━━━━━`
                 this.reply(jid, text, 0, { thumbnail: kai, contextInfo: {
                 mentionedJid: [user],
                 externalAdReply: {
