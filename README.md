@@ -38,12 +38,12 @@
 > pkg install ffmpeg
 > pkg install libwebp
 > git clone https://github.com/Botynyakamu/zifabotz-V5
-> cd zifabotz-V5
+> cd zxyuubotz
 > npm i
 > node run.js
 # Untuk Sdcard (File Sudah Di Download)
 > cd /sdcard
-> cp -r zifabotz-V5 $HOME
+> cp -r zxyuubotz $HOME
 > cd zifabotz-V5
 > npm i
 > node run.js
@@ -90,7 +90,7 @@ Buka halaman HEROKU => https://heroku.com
 ## settings 
 Edit Nomor Owner DLL `'./config.js'`
 ```ts 
-OwnerNumber = ['wa.me/6285828764046']
+OwnerNumber = ['wa.me/6281224804625']
 
 Thumbnail
 global.image = 'https://telegra.ph/file/4f4a5a3cde6a98a96da79.jpg'//change the image
