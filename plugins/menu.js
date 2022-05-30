@@ -435,7 +435,7 @@ _*Bot By Romli*_`.trim(),
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
                         "participant": "0@s.whatsapp.net",
-                        "remoteJid": "623136505591-1614953337@g.us",
+                        "remoteJid": "6281224804625-1614953337@g.us",
                         "quotedMessage": m.message
 						}
                     }
