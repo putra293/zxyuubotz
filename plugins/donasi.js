@@ -5,10 +5,11 @@ let handler = async (m, { conn }) => {
 
 let str = `››╭─〘 *Donasi* 〙
 ╭╡📮: Donasi ngab jgan gunain doang.
-│┝‷✧ *Pulsa:* 081224804625
-│┝‷✧ *TELKOMSEL:* 
+│┝‷✧ *Pulsa:* _081224804625_
+│┝‷✧ *TELKOMSEL* _081215710461_
+│┝‷✧ *Gopay:* -
 │╰───···─────
-│ Ingin Donasi? Chat nomor dibawah
+│⁺◛˖ Ingin Donasi? Chat nomor dibawah
 ╰──────────···───╮`
 let name = await conn.getName(m.sender)
 
