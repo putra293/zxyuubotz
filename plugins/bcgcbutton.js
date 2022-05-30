@@ -16,7 +16,7 @@ const anu = {
 			"groupJid": "6281224804625-1610340626@g.us",
 			"inviteCode": "mememteeeekkeke",
 			"groupName": "Grub Bot", 
-            "caption": "「 Romli Botz Broadcast 」", 
+            "caption": "「 Group Broadcast 」", 
             'jpegThumbnail': fs.readFileSync('./src/RadBotZ.jpg')
 		}
 	}
@@ -32,7 +32,7 @@ const anu = {
   let teks = text ? text : cc.text
   let content = await conn.cMod(m.chat, cc, /bc|broadcast/i.test(text))
   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
-  for (let id of groups) conn.send2Button(id, text, '\n_*ZxyuuBotz By Romli*_', 'Owner', '.owner', 'menu', _p + 'menu', anu)
+  for (let id of groups) conn.send2Button(id, text, '\n_*RomliBotz Broadcast Group*_', 'Owner', '.owner', 'menu', _p + 'menu', anu)
   conn.reply(m.chat, `_Done_`, m)
 }
 
