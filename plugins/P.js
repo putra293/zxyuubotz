@@ -6,5 +6,5 @@ conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', '*Salam Dong Nggak Usah P, Kek O
 
 handler.customPrefix = /^(p|P)$/i
 handler.command = new RegExp
-handler.owner = true
+
 module.exports = handler
