@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    heum = await fetch(`http://hadi-api.herokuapp.com/api/hentai`)
    if (!heum) throw json
     json = await heum.buffer()
-   conn.sendButtonImg(m.chat, json, 'sange ye:v', '©️ JarotBotz', 'Lanjut oy', `${usedPrefix + command}`, m)
+   conn.sendButtonImg(m.chat, json, 'sange ye:v', '©️ ZxyuuBotz', 'Lanjut oy', `${usedPrefix + command}`, m)
 }
 handler.help = ['hentai']
 handler.tags = ['hentai']
