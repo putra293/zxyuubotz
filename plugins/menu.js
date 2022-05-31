@@ -223,15 +223,22 @@ let uptime = clockString(_uptime)
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `╭═══════════════════════
-║╭──❉ 〔 *ZxyuuBotz 〕 ❉────── 
-║│➸⏰ *Aktif selama:* ${uptime}
-║│➸⚡ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸ *NamaBot:* *_zxyuubotz-V1_*
-║│➸ *${conn.blocklist.length}* _*Terblock*_
-║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* _*Chat Terbanned*_
-║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* _*Pengguna Terbanned*_
-╰─────────❉
+                        "description": `┏━━〔 *ZxyuuBotz* 〕━ꕥ
+┃✾ ⏲️ *Aktif Selama:* _*${uptime}*_
+┃✾ 🔋 *Info Batre* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
+┃✾ 👥 *User:* _*${Object.keys(global.db.data.users).length}*_ 
+┃✾ ⛔ *Terblok:* _*${conn.blocklist.length}*_ 
+┃✾ ⛔ *User keban:*  _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*_ 
+┃✾ ⛔ *Ban:* _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  
+┗━━━━━━━━ꕥ
+┏──『 _*Bot Info*_ 』──⬣
+│⬡ Version : 4.41
+│⬡ Browser : ${conn.browserDescription[1]}
+│⬡ Host Number : @${global.conn.user.jid.split('@')[0]}
+│⬡ WhatsApp Web Name : ${conn.browserDescription[0]}
+│⬡ WhatsApp Web Version : ${conn.browserDescription[2]}
+│⬡ Platform : Heroku
+┗──────────⬣
 _*Bot By Romli*_`.trim(),
                         "footerText": "ZxyuuRomz--XzyuuNaii",
                         "buttonText": "KLIK DISINI",
