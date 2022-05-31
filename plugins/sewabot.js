@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
     let kamisato = `
-╭═══ 〔 𝐋𝐈𝐒𝐓 𝐁𝐄𝐑𝐋𝐀𝐍𝐆𝐆𝐀𝐍𝐀𝐍 〕 ════
+╭═══ 〔 *SEWA BOTZ* 〕 ════
 ├⬡ 𝟏 ᗷᑌᒪᗩᑎ
 ├⬡ 4 ᗷᑌᒪᗩᑎ
 ├⬡ 8 BULAN
