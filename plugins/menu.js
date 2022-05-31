@@ -8,24 +8,24 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-║╭─────⟢ 〔 *Zxyuu Botz* 〕 ⟣──────
-║│➸Hai, %name!
-║│➸Tersisa *%limit Limit*
-║│➸Role *%role*
-║│➸Level *%level (%exp / %maxexp)*
-║│➸[%xp4levelup]
-║│➸%totalexp XP secara Total
-║╭──⟢〔 *TANGGAL* 〕 ⟣──────
-║│➸Hari: *%week %weton*
-║│➸Tanggal: *%date*
-║│➸WaktuIslam:*%dateIslamic*
-║│➸Waktu: *%time*
-║╭──⟢ 〔 *TIME* 〕 ⟣──────
-║│➸Uptime: *%uptime (%muptime)*
-║│➸Database: %rtotalreg dari %totalreg
-║│➸Memory Used : 
-║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-╰─────────⟢
+Hai *%name!*
+┏━━〔 Info %name 〕━ꕥ
+┃✾ Limit : *%limit* Limit
+┃✾ Role : *%role*
+┃✾ Level :
+┃✾ *%level (%exp / %maxexp)* [%xp4levelup]
+┃✾ %totalexp XP secara Total 
+┗━━━━━━━━ꕥ
+
+┏──『 *Today* 』──⬣
+│⬡  Tanggal: 
+│⬡  *%week %weton, %date*
+│⬡  Tanggal Islam:
+│⬡  *%dateIslamic*
+│⬡  Waktu: *%time*
+│⬡  Uptime: *%uptime (%muptime)*
+│⬡  Database: %rtotalreg dari %totalreg
+┗──────────⬣
 %readmore`.trimStart(),
   header: '┏━━ꕥ〔 %category 〕ꕥ━⬣ ',
   body: '  ┃ ⎙ %cmd %islimit %isPremium',
