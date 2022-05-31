@@ -250,9 +250,9 @@ _*Bot By Romli*_`.trim(),
                                     "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
                                     "rowId": ".donasi"
                                 }, {
-                                    "title":      "☰ Daftar ",
-                                    "description": "Daftar diri anda di ZxyuuBotz",
-                                    "rowId": ".daftar"
+                                    "title":      "☰ Pertanyaan Tentang Bot Ini ",
+                                    "description": "ZxyuuRomzz",
+                                    "rowId": ".qna"
                                 }, {
  "title":      "☰ Setelan grub",
                                     "description": "setelan grub",
