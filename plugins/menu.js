@@ -226,20 +226,12 @@ let uptime = clockString(_uptime)
                         "description": `┏━━〔 *ZxyuuBotz* 〕━ꕥ
 ┃✾ ⏲️ *Aktif Selama:* _*${uptime}*_
 ┃✾ 🔋 *Info Batre:* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
-┃✾ 👥 *User:* _*${Object.keys(global.db.data.users).length}*_ 
-┃✾ 🤖 *Jadibot:* _*${totaljadibot.length}*_ 
-┃✾ ⛔ *Blokir:* _*${conn.blocklist.length}*_ 
-┃✾ 🚫 *Ban:* _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*_ 
-┃✾ 👤 *UserKeban:* _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  _*UserKeban*_
+┃✾ 👥 *User:* ${Object.keys(global.db.data.users).length}
+┃✾ 🤖 *Jadibot:* ${totaljadibot.length}
+┃✾ ⛔ *Blokir:* ${conn.blocklist.length}
+┃✾ 🚫 *Ban:* {Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┃✾ 👤 *UserKeban:* ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ┗━━━━━━━━ꕥ
-┏──『 _*Bot Info*_ 』──⬣
-│⬡ Version : V-5
-│⬡ Browser : ${conn.browserDescription[1]}
-│⬡ Host Number : @${global.conn.user.jid.split('@')[0]}
-│⬡ WhatsApp Web Name : ${conn.browserDescription[0]}
-│⬡ WhatsApp Web Version : ${conn.browserDescription[2]}
-│⬡ Platform : Heroku
-┗──────────⬣
 _*Bot By Romli*_`.trim(),
                         "footerText": "ZxyuuRomz--XzyuuNaii",
                         "buttonText": "KLIK DISINI",
