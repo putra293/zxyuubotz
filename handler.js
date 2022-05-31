@@ -394,29 +394,57 @@ module.exports = {
       }
       if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
     }
-  },
+  },  
   async participantsUpdate({ jid, participants, action }) {
     let chat = global.db.data.chats[jid] || {}
     let text = ''
     switch (action) {
-        case 'add':
-        case 'remove':
-          if (chat.welcome) {
-            let groupMetadata = await this.groupMetadata(jid)
-            for (let user of participants) {
-              let kai = await(await fetch('https://telegra.ph/file/fd581c8c61541d90f2eac.jpg')).buffer()
-              let poi = await(await fetch('https://telegra.ph/file/f5ba2a64fc69d9a5bfbb7.jpg')).buffer()
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome Tod!, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                  (chat.sBye || this.bye || conn.bye || 'Dadahh Ngntd!, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-                let wel = `━━━━━━ Welcome Tod ━━━━━━`
-                let lea = `━━━━━━ Good Bye Tod ━━━━━━`
-                this.reply(jid, text, 0, { thumbnail: kai, contextInfo: {
-                mentionedJid: [user],
-                externalAdReply: {
-                  mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
-                  title: action === 'add' ? wel : lea,
-                  body: 'JAROTBOTZ',
-                  thumbnail: poi
+      case 'add':
+      case 'remove':
+        if (chat.welcome) {
+          let groupMetadata = await this.groupMetadata(jid)
+          for (let user of participants) {
+            // let pp = './src/avatar_contact.png'
+            let pp = './src/RadBotZ.jpg'
+            let ppgc = './src/RadBotZ.jpg'
+            try {
+              pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
+              ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
+            } catch (e) {
+            } finally {
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+                (chat.sBye || this.bye || conn.bye || 'Sampai jumpa, @user!')).replace(/@user/g, '@' + user.split`@`[0])
+              let wel = await new knights.Welcome()
+                .setUsername(this.getName(user))
+                .setGuildName(this.getName(jid))
+                .setGuildIcon(ppgc)
+                .setMemberCount(groupMetadata.participants.length)
+                .setAvatar(pp)
+                .setBackground("https://telegra.ph/file/89a6260f0a6720240e698.jpg")
+                .toAttachment()
+
+              let lea = await new knights.Goodbye()
+                .setUsername(this.getName(user))
+                .setGuildName(this.getName(jid))
+                .setGuildIcon(ppgc)
+                .setMemberCount(groupMetadata.participants.length)
+                .setAvatar(pp)
+                .setBackground("https://telegra.ph/file/fb0368243347cf3fa05b5.jpg")
+                .toAttachment()
+
+              this.sendButtonImg(jid, action === 'add' ? wel.toBuffer() : lea.toBuffer(), text, action === 'add' ? 'Welcome User 👋' : 'Goodbye User 👋', action === 'add' ? 'Welcome👋' : 'Byee👋',action === 'add' ? 'Welcome👋' : 'Byee👋', {
+key: {
+fromMe: false,
+participant: '0@s.whatsapp.net',
+remoteJid: 'status@broadcast'
+},
+message: {
+contactMessage: {
+displayName: this.getName(user),
+vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;WA;;;\nFN:WA\nTEL;type=CELL;type=VOICE;waid=${user.split('@')[0]}:${user.split('@')[0]}\nEND:VCARD`
+}
+}
+}, false, { contextInfo: { mentionedJid: [user]
                 }
               }}) 
             }
