@@ -232,7 +232,7 @@ let uptime = clockString(_uptime)
 ┃✾ *Ban:* _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  
 ┗━━━━━━━━ꕥ
 ┏──『 _*Bot Info*_ 』──⬣
-│⬡ Version : 4.41
+│⬡ Version : 15.0
 │⬡ Browser : ${conn.browserDescription[1]}
 │⬡ Host Number : @${global.conn.user.jid.split('@')[0]}
 │⬡ WhatsApp Web Name : ${conn.browserDescription[0]}
