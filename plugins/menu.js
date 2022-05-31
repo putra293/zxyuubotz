@@ -223,15 +223,15 @@ let uptime = clockString(_uptime)
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `┏━━〔 *ZxyuuBotz* 〕━ꕥ
-┃✾ ⏲️ *Aktif Selama:* _*${uptime}*_
-┃✾ 🔋 *Info Batre:* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
-┃✾ 👥 *User:* ${Object.keys(global.db.data.users).length}
-┃✾ 🤖 *Jadibot:* ${totaljadibot.length}
-┃✾ ⛔ *Blokir:* ${conn.blocklist.length}
-┃✾ 🚫 *Ban:* {Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┃✾ 👤 *UserKeban:* ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-┗━━━━━━━━ꕥ
+                        "description": `╭═══════════════════════
+║╭──❉ 〔 *ZxyuuBotz 〕 ❉────── 
+║│➸⏰ *Aktif selama:* ${uptime}
+║│➸⚡ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+║│➸ *NamaBot:* *_zxyuubotz-V1_*
+║│➸ *${conn.blocklist.length}* _*Terblock*_
+║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* _*Chat Terbanned*_
+║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* _*Pengguna Terbanned*_
+╰─────────❉
 _*Bot By Romli*_`.trim(),
                         "footerText": "ZxyuuRomz--XzyuuNaii",
                         "buttonText": "KLIK DISINI",
