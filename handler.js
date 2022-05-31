@@ -1,6 +1,6 @@
 // R-Txzy Recode
 // Zifabotz Recode
-// jarotbotz Recode
+// ZxyuuBotz Recode
 
 let util = require('util')
 let fetch = require('node-fetch')
