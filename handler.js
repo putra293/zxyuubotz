@@ -1,6 +1,6 @@
 // R-Txzy Recode
 // Zifabotz Recode
-// ZxyuuBotz Recode
+// jarotbotz Recode
 
 let util = require('util')
 let fetch = require('node-fetch')
@@ -394,45 +394,29 @@ module.exports = {
       }
       if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
     }
-  },  
+  },
   async participantsUpdate({ jid, participants, action }) {
     let chat = global.db.data.chats[jid] || {}
     let text = ''
     switch (action) {
-      case 'add':
-      case 'remove':
-        if (chat.welcome) {
-          let groupMetadata = await this.groupMetadata(jid)
-          for (let user of participants) {
-            // let pp = './src/avatar_contact.png'
-            let pp = './src/RadBotZ.jpg'
-            let ppgc = './src/RadBotZ.jpg'
-            try {
-              pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
-              ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
-            } catch (e) {
-            } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
-                (chat.sBye || this.bye || conn.bye || 'Sampai jumpa, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-              let wel = await new knights.Welcome()
-                .setUsername(this.getName(user))
-                .setGuildName(this.getName(jid))
-                .setGuildIcon(ppgc)
-                .setMemberCount(groupMetadata.participants.length)
-                .setAvatar(pp)
-                .setBackground("https://telegra.ph/file/89a6260f0a6720240e698.jpg")
-                .toAttachment()
-
-              let lea = await new knights.Goodbye()
-                .setUsername(this.getName(user))
-                .setGuildName(this.getName(jid))
-                .setGuildIcon(ppgc)
-                .setMemberCount(groupMetadata.participants.length)
-                .setAvatar(pp)
-                .setBackground("https://telegra.ph/file/fb0368243347cf3fa05b5.jpg")
-                .toAttachment()
-
-              this.sendButtonImg(jid, action === 'add' ? wel.toBuffer() : lea.toBuffer(), text, action === 'add' ? 'Welcome User 👋' : 'Goodbye User 👋', action === 'add' ? 'Welcome👋' : 'Byee👋',action === 'add' ? 'Welcome👋' : 'Byee👋', {
+        case 'add':
+        case 'remove':
+          if (chat.welcome) {
+            let groupMetadata = await this.groupMetadata(jid)
+            for (let user of participants) {
+              let kai = await(await fetch('https://telegra.ph/file/36105c56ce4b3035d5807.jpg')).buffer()
+              let poi = await(await fetch('https://telegra.ph/file/36105c56ce4b3035d5807.jpg')).buffer()
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome 👋, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
+                  (chat.sBye || this.bye || conn.bye || 'Bye 👋 , @user!')).replace(/@user/g, '@' + user.split`@`[0])
+                let wel = `━━━━━━ Welcome Tod ━━━━━━`
+                let lea = `━━━━━━ Good Bye Ngntd ━━━━━━`
+                this.reply(jid, text, 0, { thumbnail: kai, contextInfo: {
+                mentionedJid: [user],
+                externalAdReply: {
+                  mediaUrl: 'https://youtu.be/GgLr_BV9ijg',
+                  title: action === 'add' ? wel : lea,
+                  body: 'ZxyuuBotz',
+                  thumbnail: poi
                 }
               }}) 
             }
@@ -496,14 +480,14 @@ ketik *.on delete* untuk mematikan pesan ini
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: '*LU SIAPA OWNER AJA BUKAN🗿*',
+    rowner: '*LU SIAPA OWNER AJA BULAN🗿*',
     owner: '*LU SIAPA OWNER AJA BUKAN🗿*',
-    premium: '*BELI PREMIUM DULU NGAB🗿*',
-    group: '*INI BUKAN GROUP NGNTD!!*',
-    private: '*CHAT PRIBADI!!*',
-    admin: '*LU ADMIN KAH DEK??*',
-    botAdmin: '*ADMIN DULU BOTNYA!!*',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n#daftar Zxyuu.16',
+    premium: '*BELI PREMIUM DULU BANH!!*',
+    group: '*CUMAN KHUSUS GRUB NGNTD!!*',
+    private: '*CHAT PRIBADI!!!*',
+    admin: '*LU EMANG ADMIN GROUP???*',
+    botAdmin: '*ADMIN DULU BOTNYA NGNTD!!!*',
+    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n#daftar ROMLI.16',
     nsfw: 'NSFW doesnt active.\nNSFW tidak aktif.'
   }[type]
   if (msg) return m.reply(msg)
