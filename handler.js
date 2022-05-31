@@ -433,18 +433,6 @@ module.exports = {
                 .toAttachment()
 
               this.sendButtonImg(jid, action === 'add' ? wel.toBuffer() : lea.toBuffer(), text, action === 'add' ? 'Welcome User 👋' : 'Goodbye User 👋', action === 'add' ? 'Welcome👋' : 'Byee👋',action === 'add' ? 'Welcome👋' : 'Byee👋', {
-key: {
-fromMe: false,
-participant: '0@s.whatsapp.net',
-remoteJid: 'status@broadcast'
-},
-message: {
-contactMessage: {
-displayName: this.getName(user),
-vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;WA;;;\nFN:WA\nTEL;type=CELL;type=VOICE;waid=${user.split('@')[0]}:${user.split('@')[0]}\nEND:VCARD`
-}
-}
-}, false, { contextInfo: { mentionedJid: [user]
                 }
               }}) 
             }
