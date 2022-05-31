@@ -560,18 +560,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "udah malam tidur gih •>•"
+  res = "udah malem ngntd, tidur kehed..!!"
   if (time >= 4) {
-    res = "Selamat pagi hari kak 🌅"
+    res = "Selamat pagi *Tod* 🌅"
   }
   if (time > 10) {
-    res = "Selamat siang hari kak 🏜️"
+    res = "Selamat siang *Tod* 🏜️"
   }
   if (time >= 15) {
-    res = "Selamat sore hari kak 🌄"
+    res = "Selamat sore *Tod* 🌄"
   }
   if (time >= 18) {
-    res = "Selamat malam hari kak 🌌"
+    res = "Selamat malam *Tod* 🌌"
   }
   return res
 }
