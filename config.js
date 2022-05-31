@@ -48,8 +48,8 @@ global.wait = '_*BENTAR NGAB LAGI PROSES*_'
 global.eror = '「❗」_*LAGI EROR NGAP🗿*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '© Zxyuu-Botz' //change the watermark 
-global.image = 'https://telegra.ph/file/418579c36ec1ba7cba9f2.jpg' //change the image
-global.thumbfoto = 'https://telegra.ph/file/6a66e778bbf55b6cdd45f.jpg'
+global.image = 'https://telegra.ph/file/f409373f759b2d9f141b0.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/f409373f759b2d9f141b0.jpg'
 
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
