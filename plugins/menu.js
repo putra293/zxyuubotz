@@ -28,7 +28,7 @@ const defaultMenu = {
 ╰─────────⟢
 %readmore`.trimStart(),
   header: '┏━━ꕥ〔 %category 〕ꕥ━⬣ ',
-  body: '  ┃ ✾%cmd %islimit %isPremium',
+  body: '  ┃ ⎙ %cmd %islimit %isPremium',
   footer: '┗━ꕥ\n',
   after: `
  _*Botz By Romli*_
