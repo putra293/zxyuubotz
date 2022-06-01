@@ -99,10 +99,6 @@ global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
 ```
 ---------
-##BANTU DONASI YUK
-```bash
-[`MURSID`](http://saweria.co/mursid25)
-```
 
 Simple WhatsApp Bot
 
@@ -112,7 +108,7 @@ Simple WhatsApp Bot
 
 # Ambil [seesion.data.json] Di sini => JANGAN LUPA MODE DESKTOP
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@zeeoneofc/SessionByZeeoneOfc?lite=1&outputonly=1#.replit)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@tioclkp02/ScanQr-botwea-10#runing.txt)
 
 
 
@@ -133,11 +129,13 @@ Heroku Buildpack
 
  [`ZIFABOTZ`](https://wa.me/6285828764046)
 
+ [`ZxyuuBotz`](https://wa.me/6281224804625)
+
 ## Whatsapp
 
-[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv)
+[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/ItgtoArOdVD46P7S9cA179)
 [![Rozi](https://img.shields.io/badge/WhatsApp%20Rozi-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285828764046/)
-[![Owner Zifabotz](https://img.shields.io/badge/WhatsApp%20Ownerzifabotz-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285828764046/)
+[![Owner Zifabotz](https://img.shields.io/badge/WhatsApp%20OwnerZxyuuBotz-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281224804625)
 
 [![BOTCAHX](https://github.com/BOTCAX.png?size=100)](https://github.com/BOTCAHX) | [![ALYA](https://github.com/AlyaaXd.png?size=100)](https://github.com/AlyaaXd) | [![ZIFABOTZ](https://github.com/Botynyakamu.png?size=100)](https://github.com/botynyakamu)
 ----|----|----
