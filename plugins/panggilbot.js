@@ -1,6 +1,6 @@
 let fs = require('fs')
 let handler = async (m) => {
-let stc = fs.readFileSync('./src/tmp.webp')
+let stc = fs.readFileSync('./tmp/tmp.webp')
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
