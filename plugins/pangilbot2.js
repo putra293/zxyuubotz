@@ -9,7 +9,7 @@ function clockString(ms) {
   }
 conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `BOT BY ROMLI:3)
 }
-handler.customPrefix = /^(rom)$/i
+handler.customPrefix = /^(zxyuu)$/i
 handler.command = new RegExp
 
 module.exports = handler
