@@ -7,7 +7,7 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
   }
-conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `*AOWKWKWK*`:`NGNTD`)
+conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `*Naiichnz Uwu :3*`)
 }
 handler.customPrefix = /^(nai)$/i
 handler.command = new RegExp
