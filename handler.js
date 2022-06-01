@@ -33,10 +33,10 @@ module.exports = {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
-          if (!isNumber(user.exp)) user.exp = 0
-          if (!isNumber(user.limit)) user.limit = 10
+          if (!isNumber(user.exp)) user.exp = 10000000
+          if (!isNumber(user.limit)) user.limit = 100
           if (!('registered' in user)) user.registered = false
-          if (!isNumber(user.lastclaim)) user.lastclaim = 0
+          if (!isNumber(user.lastclaim)) user.lastclaim = 10000
           if (!user.registered) {
             if (!('name' in user)) user.name = this.getName(m.sender)
             if (!isNumber(user.nim)) user.age = -1
@@ -88,8 +88,8 @@ module.exports = {
           if (!('detect' in chat)) chat.detect = true
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
-          if (!('sPromote' in chat)) chat.sPromote = ''
-          if (!('sDemote' in chat)) chat.sDemote = ''
+          if (!('sPromote' in chat)) chat.sPromote = true
+          if (!('sDemote' in chat)) chat.sDemote = true
           if (!('antiLink' in chat)) chat.antiLink = true
           if (!('autoread' in chat)) chat.autoread = false
           if (!('broadcast' in chat)) chat.broadcast = true
@@ -107,8 +107,8 @@ module.exports = {
           detect: true,
           sWelcome: '',
           sBye: '',
-          sPromote: '',
-          sDemote: '',
+          sPromote: true,
+          sDemote: true,
           antiLink: true,
           autoread: false,
           broadcast: true,
