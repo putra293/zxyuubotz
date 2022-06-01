@@ -44,7 +44,7 @@ module.exports = {
           }
           if (!isNumber(user.afk)) user.afk = -1
           if (!('afkReason' in user)) user.afkReason = ''
-          if (!('autolevelup' in user)) user.autolevelup = false
+          if (!('autolevelup' in user)) user.autolevelup = true
           if (!('banned' in user)) user.banned = false
           if (!('level' in user)) user.level = 0
           if (!('premium' in user)) user.premium = false
@@ -58,7 +58,7 @@ module.exports = {
           if (!isNumber(user.dailyReward)) user.dailyReward = 0
         } else global.db.data.users[m.sender] = {
           exp: 0,
-          limit: 10,
+          limit: 100,
           registered: false,
           lastclaim: 0, 
           name: this.getName(m.sender),
@@ -66,7 +66,7 @@ module.exports = {
           regTime: -1,
           afk: -1,
           afkReason: '',
-          autolevelup: false,
+          autolevelup: true,
           banned: false,
           level: 0,
           premium: false,
@@ -75,9 +75,9 @@ module.exports = {
           joincount: 0,
           call: 0,
           pc: 0,
-          reward: 0,
-          dailyReward: 0, 
-          warning: 0,
+          reward: 10,
+          dailyReward: 10, 
+          warning: 5,
         }
 
         let chat = global.db.data.chats[m.chat]
@@ -99,8 +99,8 @@ module.exports = {
           if (!('getmsg' in chat)) chat.getmsg = false
           if (!isNumber(chat.expired)) chat.expired = 0
           if (!('stiker' in chat)) chat.stiker = false
-          if (!('viewonce' in chat)) chat.viewonce = true
-          if (!('nsfw' in chat)) chat.nsfw = false
+          if (!('viewonce' in chat)) chat.viewonce = false
+          if (!('nsfw' in chat)) chat.nsfw = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: true,
@@ -117,7 +117,7 @@ module.exports = {
           getmsg: false,
           expired: 0,
           stiker: false,
-          viewonce: true,
+          viewonce: false,
           nsfw: true,
           badword: false,
         }
@@ -126,11 +126,11 @@ module.exports = {
         if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
         if (settings) {
           if (!'anon' in settings) settings.anon = true
-          if (!'anticall' in settings) settings.anticall = true
+          if (!'anticall' in settings) settings.anticall = false
           if (!'statusUpdate' in settings) settings.statusUpdate = false
           if (!isNumber(settings.status)) settings.status = 0
-          if (!'antispam' in settings) settings.antispam = true
-          if (!'antitroli' in settings) settings.antitroli = true
+          if (!'antispam' in settings) settings.antispam = false
+          if (!'antitroli' in settings) settings.antitroli = false
           if (!'group' in settings) settings.group = false
           if (!'jadibot' in settings) settings.jadibot = false
           if (!'private' in settings) settings.private = false
@@ -140,9 +140,9 @@ module.exports = {
           if (!isNumber(settings.backupDB)) settings.backupDB = 0
         } else global.db.data.settings[this.user.jid] = {
           anon: true,
-          anticall: true,
-          antispam: true,
-          antitroli: true,
+          anticall: false,
+          antispam: false,
+          antitroli: false,
           group: false,
           jadibot: false,
           private: false,
