@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-Hai *%name!*
+_*Hai*_ *%name!*
 ┏━━〔 Info %name 〕━ꕥ
 ┃✾ Limit : *%limit* Limit
 ┃✾ Role : *%role*
@@ -240,7 +240,7 @@ let uptime = clockString(_uptime)
 │⬡ Platform : Heroku
 ┗──────────⬣
 _*Bot By Romli*_`.trim(),
-                        "footerText": "ZxyuuRomz--XzyuuNaii",
+                        "footerText": "ZxyuuRomz XzyuuNaii",
                         "buttonText": "KLIK DISINI",
                         "listType": "SINGLE_SELECT",
                         "sections": [
