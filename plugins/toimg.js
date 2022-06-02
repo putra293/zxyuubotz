@@ -10,7 +10,7 @@ const anu = {
        message: {
                     documentMessage: {
                     title: 'Dah Nih Kak ZxyuuBotz Proses!!', 
-                    jpegThumbnail: fs.readFileSync('./src/IMG-20220530-WA0018(1).jpg')
+                    jpegThumbnail: fs.readFileSync('./views/IMG-20220530-WA0018.jpg')
                           }
                         }
                       }
