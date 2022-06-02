@@ -1,6 +1,6 @@
 let fs = require('fs')
 let handler = async (m) => {
-let stc = fs.readFileSync('./sticker/canda.webp')
+let stc = fs.readFileSync('./tmp/canda.webp')
 conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', '*CANDA TOD*', 'status@broadcast')
 }
 
