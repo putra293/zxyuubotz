@@ -33,7 +33,7 @@ module.exports = {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
-          if (!isNumber(user.exp)) user.exp = 10000000
+          if (!isNumber(user.exp)) user.exp = 10000
           if (!isNumber(user.limit)) user.limit = 100
           if (!('registered' in user)) user.registered = false
           if (!isNumber(user.lastclaim)) user.lastclaim = 10000
@@ -49,15 +49,15 @@ module.exports = {
           if (!('level' in user)) user.level = 0
           if (!('premium' in user)) user.premium = false
           if (!isNumber(user.premiumTime)) user.premiumTime = 0
-          if (!('role' in user)) user.role = ''
+          if (!('role' in user)) user.role = true
           if (!isNumber(user.joincount)) user.joincount = 0
           if (!isNumber(user.call)) user.call = 0
           if (!isNumber(user.pc)) user.pc = 0
           if (!isNumber(user.reward)) user.reward = 0
-          if (!isNumber(user.warning)) user.warnimg = 0
+          if (!isNumber(user.warning)) user.warnimg = 5
           if (!isNumber(user.dailyReward)) user.dailyReward = 0
         } else global.db.data.users[m.sender] = {
-          exp: 0,
+          exp: 1000,
           limit: 100,
           registered: false,
           lastclaim: 0, 
@@ -71,7 +71,7 @@ module.exports = {
           level: 0,
           premium: false,
           premiumTime: 0,
-          role: '',
+          role: true,
           joincount: 0,
           call: 0,
           pc: 0,
