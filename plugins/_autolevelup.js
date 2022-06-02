@@ -31,7 +31,7 @@ handler.before = async function (m) {
                         {
                         	let tag = `@${m.sender.replace(/@.+/, '')}`
                         	let mentionedJid = [m.sender]
-                                        await this.sendButtonLoc(m.chat, await (await fetch(image)).buffer(), `◪ *Name:* ${tag}\n├◆ *Role:* ${role}\n├◆ *Exp:* ${exp} xp\n╰◆ *Level:* ${before} ➠ ${user.level}`.trim(), watermark, 'STORE ZIFABOTZ', '.iklan', m, { contextInfo: { mentionedJid }})
+                                        await this.sendButtonLoc(m.chat, await (await fetch(image)).buffer(), `◪ *Name:* ${tag}\n├◆ *Role:* ${role}\n├◆ *Exp:* ${exp} xp\n╰◆ *Level:* ${before} ➠ ${user.level}`.trim(), watermark, 'STORE ZXYUUBOTZ', '.iklan', m, { contextInfo: { mentionedJid }})
                                 }
                 }
         }
