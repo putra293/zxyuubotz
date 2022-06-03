@@ -8,7 +8,7 @@ let str = `
 ║│➸  https://chat.whatsapp.com/ItgtoArOdVD46P7S9cA179
 ╰─────────❉
 ▌│█║▌║▌║║▌║▌║█│▌
-_*ZXYUU-BOTZ*_ by.romli
+_*Putzz-BOTZ*_ by.Putra
 `.trim()
 conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
 }
