@@ -11,14 +11,14 @@ let handler = async(m, { conn }) => {
 📮 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ *_Tolong jangan dispam_*
 _____••••••••• 
-Bot By Romli`.trim()
+Bot By Putra`.trim()
   const button = {
         buttonText: '↱ 🄺🄻🄸🄺 🅂🄸🄽🄸 ↲',
         description: kontol,
         sections:  [{title: "STORE Zxyuu", rows: [
         {title: 'Menu utama', description: "Kembali ke Menu Utama", rowId:".?"},
         {title: 'nomor owner', description: "kalau mau sewa silahkan cht owner", rowId:".owner"},
-        {title: 'RULES', description: "rules ZxyuuBotz", rowId:".rules"},
+        {title: 'RULES', description: "rules PutzzBotz", rowId:".rules"},
        ] }],
         listType: 1
        }
