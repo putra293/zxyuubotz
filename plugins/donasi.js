@@ -5,8 +5,8 @@ let handler = async (m, { conn }) => {
 
 let str = `››╭─〘 *Donasi* 〙
 ╭╡📮: Donasi ngab jgan gunain doang.
-│┝‷✧ *Pulsa:* _081224804625_
-│┝‷✧ *TELKOMSEL* _081215710461_
+│┝‷✧ *Pulsa:* _083856051043_
+│┝‷✧ *Axsis* _083856051043_
 │┝‷✧ *Gopay:* -
 │╰───···─────
 │⁺◛˖ Ingin Donasi? Chat nomor dibawah
@@ -16,20 +16,20 @@ let name = await conn.getName(m.sender)
 let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 
   sumberImg = await (await fetch(fla + 'donasi')).buffer()
-  image = (await conn.prepareMessage('6281224804625@s.whatsapp.net', sumberImg, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
+  image = (await conn.prepareMessage('6283856051043@s.whatsapp.net', sumberImg, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
   res = await conn.prepareMessageFromContent(m.chat, {
     "productMessage": {
       "product": {
         "productImage": image,
         "productId": "4938174216214248",
-        "title": "DONASI ZXYUUBOTZ",
+        "title": "DONASI PutzzVyn",
         "description": '\n' + wm + '\n' + str,
         "retailerId": "Thanks For Donate !",
         "url": "▌│█║▌║▌║║▌║▌║█│▌",
         "descriptionCount": "999999999",
         "productImageCount": "1",
       },
-      "businessOwnerJid": "6281224804625@s.whatsapp.net",
+      "businessOwnerJid": "6283856051043@s.whatsapp.net",
       "contextInfo": {
         "forwardingScore": 9999,
         "isForwarded": false
