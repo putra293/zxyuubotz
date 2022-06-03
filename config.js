@@ -4,7 +4,7 @@
 // Zifabotz
 
 let fs = require('fs')
-global.owner = ['6281224804625', '6281224804625','6281215710461', '6281215710461', '6281224804625'] // Letakan nomor kamu disini
+global.owner = ['6283856051043', '6283856051043','6283856051043', '6283856051043', '6283856051043'] // Letakan nomor kamu disini
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -41,13 +41,13 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'ROMLI'
-global.author = 'NAIWIN'
+global.packname = 'PUTRA'
+global.author = 'SOLO'
 
-global.wait = '_*BENTAR NGAB LAGI PROSES*_'
+global.wait = '_*BENTAR ANJING LAGI PROSES*_'
 global.eror = '「❗」_*LAGI EROR NGAP🗿*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '© Zxyuu-Botz' //change the watermark 
+global.watermark = '© PUTRA-Botz' //change the watermark 
 global.image = 'https://telegra.ph/file/f409373f759b2d9f141b0.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/f409373f759b2d9f141b0.jpg'
 
